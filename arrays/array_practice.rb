@@ -1,22 +1,20 @@
 #!/usr/bin/env rudy
 
-array = [1,2,3,4,5,6,7,8,9,10]
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-puts "#{array.join('...')}..."
-puts "T-#{array.reverse.join(', ')}...  BLASTOFF!"
-puts "The last element is #{array.last}"
-puts "The first element is #{array.first}"
-puts "The third element is #{array[2]}"
-puts "The element with an index of #{array[2]} is #{array[3]}"
-puts "The second from last element is #{array[-2]}"
-puts "The first four elements are '#{array.take(4).join(', ')}'"
-puts "If we delete #{array.delete(5)}, #{array.delete(6)} and #{array.delete(7)} from the array, we're left with #{array.to_s}"
-puts "If we add #{array.insert(0, 5).first} at the beginning of the array, we're left with #{array.to_s}"
-puts "If we add #{array.push(6).last} at the end of the array, we're left with #{array.to_s}"
-puts "Only the elements #{array.sort.last(2)} are > #{array.bsearch{|x| x >=7}}."
-puts "If we remove all the elements, then the length of the array is #{array = [0].join}"
-
-
+puts "#{a.join('...')}..."
+puts "T-#{a.reverse.join(', ')}...  BLASTOFF!"
+puts "The last element is #{a.last}"
+puts "The first element is #{a.first}"
+puts "The third element is #{a[2]}"
+puts "The element with an index of #{a[2]} is #{a[3]}"
+puts "The second from last element is #{a[-2]}"
+puts "The first four elements are '#{a.take(4).join(', ')}'"
+puts "If we delete #{a.delete(5)}, #{a.delete(6)} #{a.delete(7)} from the array, we're left with #{a.to_s}"
+puts "If we add #{a.insert(0, 5).first} at the beginning of the array, we're left with #{a.to_s}"
+puts "If we add #{a.push(6).last} at the end of the array, we're left with #{a.to_s}"
+puts "Only the elements #{a.sort.last(2)} are > #{a.bsearch { |x| x  >= 7 } }."
+puts "If we remove all the elements, then the length of the array is #{ [0].join}"
 
 # 1...2...3...4...5...6...7...8...9...10...
 # T-10, 9, 8, 7, 6, 5, 4, 3, 2, 1...  BLASTOFF!
